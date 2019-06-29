@@ -1,7 +1,7 @@
 spring:
   cloud:
     config:
-      uri: localhost:8888
+      uri: 192.168.79.135:8888
       name: eureka
       label: master
       profile: dev
