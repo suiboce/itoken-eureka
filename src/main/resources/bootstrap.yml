@@ -1,0 +1,17 @@
+spring:
+  profiles: dev
+  cloud:
+    config:
+      uri: localhost:8888
+      name: eureka
+      label: master
+      profile: dev
+---
+spring:
+  profiles: prod
+  cloud:
+    config:
+      uri: http://192.168.79.135:8888
+      name: eureka
+      label: master
+      profile: prod
